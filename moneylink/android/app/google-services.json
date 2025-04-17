@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "921791994463",
+    "project_id": "moneylink-4659a",
+    "storage_bucket": "moneylink-4659a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921791994463:android:fef338f60b3a74eec299ea",
+        "android_client_info": {
+          "package_name": "com.example.money_link"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsJiEN3NbMYExuVI7B5_ZzhYnkCZeroH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921791994463:android:29598cbfc93d6fbdc299ea",
+        "android_client_info": {
+          "package_name": "com.example.moneylink"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsJiEN3NbMYExuVI7B5_ZzhYnkCZeroH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
