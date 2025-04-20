@@ -39,6 +39,17 @@ flutter:
     - assets/images/slide2.png
     - assets/images/slide3.png
     - assets/images/theme.jpg
+    - assets/icons/apply.png
+    - assets/icons/axis.png
+    - assets/icons/bob.png
+    - assets/icons/eligibility.png
+    - assets/icons/hdfc.png
+    - assets/icons/icici.png
+    - assets/icons/pnb.png
+    - assets/icons/recommendation.jpg
+    - assets/icons/sbi.png
+    - assets/icons/status.png
+    - assets/icons/calculator.jpg
 
   fonts:
     - family: Poppins

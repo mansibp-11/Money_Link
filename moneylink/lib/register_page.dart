@@ -19,11 +19,11 @@ class _RegisterPageState extends State<RegisterPage> {
   void registerUser() async {
     setState(() => isLoading = true);
     try {
-      UserCredential userCredential =
-          await FirebaseAuth.instance.createUserWithEmailAndPassword(
-        email: emailController.text.trim(),
-        password: passwordController.text,
-      );
+      UserCredential userCredential = await FirebaseAuth.instance
+          .createUserWithEmailAndPassword(
+            email: emailController.text.trim(),
+            password: passwordController.text,
+          );
 
       // TODO: Store full name in Firestore if needed
 
@@ -38,10 +38,9 @@ class _RegisterPageState extends State<RegisterPage> {
       } else if (e.code == 'weak-password') {
         message = 'Weak password';
       }
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-        content: Text(message),
-        backgroundColor: Colors.red,
-      ));
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(message), backgroundColor: Colors.red),
+      );
     } finally {
       setState(() => isLoading = false);
     }
@@ -61,13 +60,15 @@ class _RegisterPageState extends State<RegisterPage> {
                 padding: const EdgeInsets.symmetric(horizontal: 32.0),
                 child: Column(
                   children: [
-                    const Text("MoneyLink",
-                        style: TextStyle(
-                          fontSize: 36,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontFamily: 'Pacifico',
-                        )),
+                    const Text(
+                      "MoneyLink",
+                      style: TextStyle(
+                        fontSize: 36,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontFamily: 'Pacifico',
+                      ),
+                    ),
                     const SizedBox(height: 40),
                     TextField(
                       controller: fullNameController,
@@ -99,19 +100,27 @@ class _RegisterPageState extends State<RegisterPage> {
                             borderRadius: BorderRadius.circular(12),
                           ),
                         ),
-                        child: isLoading
-                            ? const CircularProgressIndicator(
-                                color: Colors.white)
-                            : const Text("Register",
-                                style: TextStyle(
-                                    fontSize: 18, color: Colors.white)),
+                        child:
+                            isLoading
+                                ? const CircularProgressIndicator(
+                                  color: Colors.white,
+                                )
+                                : const Text(
+                                  "Register",
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    color: Colors.white,
+                                  ),
+                                ),
                       ),
                     ),
                     const SizedBox(height: 10),
                     TextButton(
                       onPressed: () => Navigator.pop(context),
-                      child: const Text("Already have an account? Login",
-                          style: TextStyle(color: Colors.white70)),
+                      child: const Text(
+                        "Already have an account? Login",
+                        style: TextStyle(color: Colors.white70),
+                      ),
                     ),
                   ],
                 ),
